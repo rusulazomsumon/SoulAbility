@@ -18,9 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route for main Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Auth Defult Route 
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
