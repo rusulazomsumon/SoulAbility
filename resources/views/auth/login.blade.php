@@ -43,5 +43,19 @@
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+
+        <!-- Social Login -->
+        <div class="block mt-4">
+            <h4 class=" text-center">or</h4>
+            <a href="{{ route('google-auth') }}" class="btn btn-primary">
+                <img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google"> 
+            </a>
+            <!-- <a href="https://github.com/login" class="btn btn-info">
+                <img src="https://github.githubassets.com/favicon.ico" alt="GitHub"> GitHub
+            </a>
+            <a href="https://www.facebook.com/login/identify?u=1" class="btn btn-primary">
+                <img src="https://www.facebook.com/images/fb_icon_32.png" alt="Facebook"> Facebook
+            </a> -->
+        </div> 
     </form>
 </x-guest-layout>
